@@ -16,3 +16,16 @@ cache_dir = 'cache'
 run_dir_ignore = ['results', 'datasets', 'cache']
 
 #----------------------------------------------------------------------------
+
+
+# Myconfig
+
+result_path = ""
+
+idPretrained = "13kgKvA3Ds-L9k8ksN1JSdWVC8UxZlWNj"
+fileNamePretrained = "karras2019stylegan-ffhq-1024x1024.pkl"
+
+pathSavePretrained = "/content/pretrained/"
+pathSaveResult = "/content/result/"
+
+pathFilePretrained = pathSavePretrained + fileNamePretrained

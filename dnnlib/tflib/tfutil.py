@@ -13,6 +13,9 @@ import tensorflow as tf
 
 from typing import Any, Iterable, List, Union
 
+# Remove warnings
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
+
 TfExpression = Union[tf.Tensor, tf.Variable, tf.Operation]
 """A type that represents a valid Tensorflow expression."""
 
