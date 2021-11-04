@@ -15,6 +15,9 @@ import dnnlib
 import dnnlib.tflib as tflib
 import config
 
+import warnings
+warnings.filterwarnings("ignore")
+
 def main():
     # Initialize TensorFlow.
     tflib.init_tf()
