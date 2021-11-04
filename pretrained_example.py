@@ -29,7 +29,7 @@ def main():
     if not os.path.exists(config.pathFilePretrained):
         os.mkdir(config.pathSavePretrained)
         os.mkdir(config.pathSaveResult)
-        os.system('!gdown --id "'+ config.idPretrained + '" -O "' + config.pathFilePretrained + '"')
+        os.system('gdown --id "'+ config.idPretrained + '" -O "' + config.pathFilePretrained + '"')
         
             # with dnnlib.util.open_url(url, cache_dir=config.cache_dir) as f:
             # _G, _D, Gs = pickle.load(f)
