@@ -14,6 +14,7 @@ import PIL.Image
 import dnnlib
 import dnnlib.tflib as tflib
 import config
+from random import randint
 
 import warnings
 warnings.filterwarnings("ignore")
@@ -51,7 +52,7 @@ def main():
     Gs.print_layers()
 
     # Pick latent vector.
-    rnd = np.random.RandomState(5)
+    rnd = np.random.RandomState(randint(1, 20))
     latents = rnd.randn(1, Gs.input_shape[1])
 
     # Generate image.
