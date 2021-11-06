@@ -29,8 +29,8 @@ def main():
         # Gs = Long-term average of the generator. Yields higher-quality results than the instantaneous snapshot.
 
     # Print network details.
-    Gs.print_layers()
-
+    _G.print_layers()
+    _D.print_layers()
     # Pick latent vector.
     rnd = np.random.RandomState(5)
     latents = rnd.randn(1, Gs.input_shape[1])
